@@ -6,6 +6,7 @@
 | ------- |
 | [0001-two-sum](https://github.com/Shashiranjan473/Leetcode_Answers/tree/master/0001-two-sum) |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/Shashiranjan473/Leetcode_Answers/tree/master/0026-remove-duplicates-from-sorted-array) |
+| [0643-maximum-average-subarray-i](https://github.com/Shashiranjan473/Leetcode_Answers/tree/master/0643-maximum-average-subarray-i) |
 ## Hash Table
 |  |
 | ------- |
@@ -18,4 +19,8 @@
 |  |
 | ------- |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/Shashiranjan473/Leetcode_Answers/tree/master/0026-remove-duplicates-from-sorted-array) |
+## Sliding Window
+|  |
+| ------- |
+| [0643-maximum-average-subarray-i](https://github.com/Shashiranjan473/Leetcode_Answers/tree/master/0643-maximum-average-subarray-i) |
 <!---LeetCode Topics End-->
