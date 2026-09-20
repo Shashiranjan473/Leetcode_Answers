@@ -14,6 +14,7 @@
 ## Math
 |  |
 | ------- |
+| [0002-add-two-numbers](https://github.com/Shashiranjan473/Leetcode_Answers/tree/master/0002-add-two-numbers) |
 | [0007-reverse-integer](https://github.com/Shashiranjan473/Leetcode_Answers/tree/master/0007-reverse-integer) |
 ## Two Pointers
 |  |
@@ -23,4 +24,12 @@
 |  |
 | ------- |
 | [0643-maximum-average-subarray-i](https://github.com/Shashiranjan473/Leetcode_Answers/tree/master/0643-maximum-average-subarray-i) |
+## Linked List
+|  |
+| ------- |
+| [0002-add-two-numbers](https://github.com/Shashiranjan473/Leetcode_Answers/tree/master/0002-add-two-numbers) |
+## Recursion
+|  |
+| ------- |
+| [0002-add-two-numbers](https://github.com/Shashiranjan473/Leetcode_Answers/tree/master/0002-add-two-numbers) |
 <!---LeetCode Topics End-->
