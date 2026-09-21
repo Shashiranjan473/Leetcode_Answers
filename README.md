@@ -19,6 +19,7 @@
 ## Two Pointers
 |  |
 | ------- |
+| [0005-longest-palindromic-substring](https://github.com/Shashiranjan473/Leetcode_Answers/tree/master/0005-longest-palindromic-substring) |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/Shashiranjan473/Leetcode_Answers/tree/master/0026-remove-duplicates-from-sorted-array) |
 ## Sliding Window
 |  |
@@ -32,4 +33,16 @@
 |  |
 | ------- |
 | [0002-add-two-numbers](https://github.com/Shashiranjan473/Leetcode_Answers/tree/master/0002-add-two-numbers) |
+## String
+|  |
+| ------- |
+| [0005-longest-palindromic-substring](https://github.com/Shashiranjan473/Leetcode_Answers/tree/master/0005-longest-palindromic-substring) |
+## Dynamic Programming
+|  |
+| ------- |
+| [0005-longest-palindromic-substring](https://github.com/Shashiranjan473/Leetcode_Answers/tree/master/0005-longest-palindromic-substring) |
+## Manacher
+|  |
+| ------- |
+| [0005-longest-palindromic-substring](https://github.com/Shashiranjan473/Leetcode_Answers/tree/master/0005-longest-palindromic-substring) |
 <!---LeetCode Topics End-->
