@@ -6,6 +6,7 @@
 | ------- |
 | [0001-two-sum](https://github.com/Shashiranjan473/Leetcode_Answers/tree/master/0001-two-sum) |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/Shashiranjan473/Leetcode_Answers/tree/master/0026-remove-duplicates-from-sorted-array) |
+| [0075-sort-colors](https://github.com/Shashiranjan473/Leetcode_Answers/tree/master/0075-sort-colors) |
 | [0108-convert-sorted-array-to-binary-search-tree](https://github.com/Shashiranjan473/Leetcode_Answers/tree/master/0108-convert-sorted-array-to-binary-search-tree) |
 | [0643-maximum-average-subarray-i](https://github.com/Shashiranjan473/Leetcode_Answers/tree/master/0643-maximum-average-subarray-i) |
 ## Hash Table
@@ -22,6 +23,7 @@
 | ------- |
 | [0005-longest-palindromic-substring](https://github.com/Shashiranjan473/Leetcode_Answers/tree/master/0005-longest-palindromic-substring) |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/Shashiranjan473/Leetcode_Answers/tree/master/0026-remove-duplicates-from-sorted-array) |
+| [0075-sort-colors](https://github.com/Shashiranjan473/Leetcode_Answers/tree/master/0075-sort-colors) |
 ## Sliding Window
 |  |
 | ------- |
@@ -62,4 +64,16 @@
 |  |
 | ------- |
 | [0108-convert-sorted-array-to-binary-search-tree](https://github.com/Shashiranjan473/Leetcode_Answers/tree/master/0108-convert-sorted-array-to-binary-search-tree) |
+## Sorting
+|  |
+| ------- |
+| [0075-sort-colors](https://github.com/Shashiranjan473/Leetcode_Answers/tree/master/0075-sort-colors) |
+## Quicksort
+|  |
+| ------- |
+| [0075-sort-colors](https://github.com/Shashiranjan473/Leetcode_Answers/tree/master/0075-sort-colors) |
+## Bubble Sort
+|  |
+| ------- |
+| [0075-sort-colors](https://github.com/Shashiranjan473/Leetcode_Answers/tree/master/0075-sort-colors) |
 <!---LeetCode Topics End-->
