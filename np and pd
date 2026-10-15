@@ -1,0 +1,991 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyP/wJIOsjZbFyQL0g7u8pUi",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Shashiranjan473/Leetcode_Answers/blob/main/np%20and%20pd\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "k3AfZxa5H92x"
+      },
+      "outputs": [],
+      "source": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "section-A  Numpy"
+      ],
+      "metadata": {
+        "id": "0lGrYcBXkJm5"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import numpy as np\n",
+        "arr_1 = np.arange(11, 30, 2)\n",
+        "arr_1.ndim, arr_1.size"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "2crLZqQAkQ1H",
+        "outputId": "774e0303-41dd-4276-d3d0-8c0bbaaa023f"
+      },
+      "execution_count": 1,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "(1, 10)"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 1
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "ouestion 2"
+      ],
+      "metadata": {
+        "id": "zPxl7PLYk7sr"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "np.linspace(5, 35, 7)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "JuKna18Fk-CI",
+        "outputId": "3b4d56f9-c6d0-4651-c04f-980a46b04668"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "array([ 5., 10., 15., 20., 25., 30., 35.])"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 2
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "question 3"
+      ],
+      "metadata": {
+        "id": "v1HFJyZClDAi"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "arr_3 = np.full((4, 3), 9)\n",
+        "arr_3[2, 1] = 0\n",
+        "arr_3"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "tNbEJlpJlFcB",
+        "outputId": "3fc809f0-a20d-4c24-9d9e-25703cebd98f"
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "array([[9, 9, 9],\n",
+              "       [9, 9, 9],\n",
+              "       [9, 0, 9],\n",
+              "       [9, 9, 9]])"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 3
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "question 4"
+      ],
+      "metadata": {
+        "id": "bBEf4Bu7lHyR"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = np.array([6, 12, 18, 24])\n",
+        "a % 5"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "cLHjPe-6lJQ9",
+        "outputId": "36d468c0-bb48-4eb7-cfc0-04c4c438d048"
+      },
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "array([1, 2, 3, 4])"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 4
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "question 5"
+      ],
+      "metadata": {
+        "id": "JKUbwRrwlNcQ"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "arr_5 = np.array([14, 28, 42, 56, 70, 84])\n",
+        "arr_5[1::2]"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "87-yh1gylOeb",
+        "outputId": "1f98b0dd-fc04-4228-e1b4-5eb3b353e37e"
+      },
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "array([28, 56, 84])"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 5
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "question 6"
+      ],
+      "metadata": {
+        "id": "KSjx6fOflRsB"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "arr_6 = np.array([-16, 25, -36, 49])\n",
+        "np.sqrt(np.abs(arr_6))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "3f6FA718lQsV",
+        "outputId": "612f4461-74bc-410f-8b7d-610d90b5c134"
+      },
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "array([4., 5., 6., 7.])"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 6
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "question 7"
+      ],
+      "metadata": {
+        "id": "j1LjAmaNlWW1"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "mat = np.arange(7, 13).reshape(3, 2)\n",
+        "before_shape = mat.shape\n",
+        "transposed_mat = mat.T\n",
+        "after_shape = transposed_mat.shape\n",
+        "transposed_mat, before_shape, after_shape"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "7xNTzn_AlYFS",
+        "outputId": "bbf9002b-70e6-4c84-de58-b910359f5087"
+      },
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "(array([[ 7,  9, 11],\n",
+              "        [ 8, 10, 12]]),\n",
+              " (3, 2),\n",
+              " (2, 3))"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 7
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "question 8"
+      ],
+      "metadata": {
+        "id": "-79KlIgelaLG"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "temperatures = np.array([18, 22, 27, 31, 24, 19])\n",
+        "temp_range = np.ptp(temperatures)\n",
+        "temp_median = np.median(temperatures)\n",
+        "temp_range, temp_median"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "mUhnm0eqlcD2",
+        "outputId": "62dfd0a5-6d2a-448b-d725-5f0d402ae03f"
+      },
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "(np.int64(13), np.float64(23.0))"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 8
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "question 9"
+      ],
+      "metadata": {
+        "id": "72fyB4VZlepH"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "values = np.array([4, 9, 4, 2, 9, 7, 2, 4])\n",
+        "unique_values = np.unique(values)\n",
+        "count = unique_values.size\n",
+        "unique_values, count"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "h-nm3AknlgcL",
+        "outputId": "c584ad6b-e5e2-40ef-9d7c-6bf17b303f52"
+      },
+      "execution_count": 9,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "(array([2, 4, 7, 9]), 4)"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 9
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "question 10"
+      ],
+      "metadata": {
+        "id": "jvM7dT0mljgE"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "speed = np.array([35, 62, 48, 81, 55])\n",
+        "np.where(speed >= 60, 'Fast', 'Normal')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Z3OzlHWbllcN",
+        "outputId": "4beed04e-092b-41e5-d27b-d103478ce674"
+      },
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "array(['Normal', 'Fast', 'Normal', 'Fast', 'Normal'], dtype='<U6')"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 10
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "pandas series"
+      ],
+      "metadata": {
+        "id": "rcU3YiUSl1fB"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import pandas as pd\n",
+        "books = pd.Series([24, 31, 19, 27], index=['Monday', 'Tuesday', 'Wednesday', 'Thursday'])\n",
+        "books"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 210
+        },
+        "id": "usq3d9ksl4Nm",
+        "outputId": "a3ecabd2-3636-4f78-ac3a-21bcd3248358"
+      },
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "Monday       24\n",
+              "Tuesday      31\n",
+              "Wednesday    19\n",
+              "Thursday     27\n",
+              "dtype: int64"
+            ],
+            "text/html": [
+              "<div>\n",
+              "<style scoped>\n",
+              "    .dataframe tbody tr th:only-of-type {\n",
+              "        vertical-align: middle;\n",
+              "    }\n",
+              "\n",
+              "    .dataframe tbody tr th {\n",
+              "        vertical-align: top;\n",
+              "    }\n",
+              "\n",
+              "    .dataframe thead th {\n",
+              "        text-align: right;\n",
+              "    }\n",
+              "</style>\n",
+              "<table border=\"1\" class=\"dataframe\">\n",
+              "  <thead>\n",
+              "    <tr style=\"text-align: right;\">\n",
+              "      <th></th>\n",
+              "      <th>0</th>\n",
+              "    </tr>\n",
+              "  </thead>\n",
+              "  <tbody>\n",
+              "    <tr>\n",
+              "      <th>Monday</th>\n",
+              "      <td>24</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>Tuesday</th>\n",
+              "      <td>31</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>Wednesday</th>\n",
+              "      <td>19</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>Thursday</th>\n",
+              "      <td>27</td>\n",
+              "    </tr>\n",
+              "  </tbody>\n",
+              "</table>\n",
+              "</div><br><label><b>dtype:</b> int64</label>"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 11
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "question 12"
+      ],
+      "metadata": {
+        "id": "kXd-TRpcl_RT"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "gadgets = pd.Series([45000, 18000, 22000], index=['Laptop', 'Tablet', 'Phone'])\n",
+        "tablet_price = gadgets['Tablet']\n",
+        "tablet_price"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "t99LAHGCmAjH",
+        "outputId": "a4681a41-dd49-4969-da77-a85c46e158ab"
+      },
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "np.int64(18000)"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 12
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "question 13"
+      ],
+      "metadata": {
+        "id": "tEoLMgS0mCZE"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "rainfall = pd.Series([12, 0, 18, 5, 23])\n",
+        "rainfall[rainfall > 10]"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 178
+        },
+        "id": "QkoDb7DymD49",
+        "outputId": "f17f6a5e-e0c8-439c-cc04-9372ae5c01af"
+      },
+      "execution_count": 13,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "0    12\n",
+              "2    18\n",
+              "4    23\n",
+              "dtype: int64"
+            ],
+            "text/html": [
+              "<div>\n",
+              "<style scoped>\n",
+              "    .dataframe tbody tr th:only-of-type {\n",
+              "        vertical-align: middle;\n",
+              "    }\n",
+              "\n",
+              "    .dataframe tbody tr th {\n",
+              "        vertical-align: top;\n",
+              "    }\n",
+              "\n",
+              "    .dataframe thead th {\n",
+              "        text-align: right;\n",
+              "    }\n",
+              "</style>\n",
+              "<table border=\"1\" class=\"dataframe\">\n",
+              "  <thead>\n",
+              "    <tr style=\"text-align: right;\">\n",
+              "      <th></th>\n",
+              "      <th>0</th>\n",
+              "    </tr>\n",
+              "  </thead>\n",
+              "  <tbody>\n",
+              "    <tr>\n",
+              "      <th>0</th>\n",
+              "      <td>12</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>2</th>\n",
+              "      <td>18</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>4</th>\n",
+              "      <td>23</td>\n",
+              "    </tr>\n",
+              "  </tbody>\n",
+              "</table>\n",
+              "</div><br><label><b>dtype:</b> int64</label>"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 13
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "question 14"
+      ],
+      "metadata": {
+        "id": "uiCdBuivmGbd"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "metals = pd.Series({'Gold': 7200, 'Silver': 95, 'Copper': 850})\n",
+        "metals_index = metals.index\n",
+        "metals_values = metals.values\n",
+        "metals_index, metals_values"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "WFinvG4VmI-q",
+        "outputId": "8540f068-a098-458a-f3ad-ea8eaf28d135"
+      },
+      "execution_count": 14,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "(Index(['Gold', 'Silver', 'Copper'], dtype='object'),\n",
+              " array([7200,   95,  850]))"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 14
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "question 15"
+      ],
+      "metadata": {
+        "id": "NgxrSzgdmLpU"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "ratings = pd.Series([3.5, 4.2, 2.8, 4.7])\n",
+        "ratings.name = 'Customer Ratings'\n",
+        "ratings.index.name = 'Review ID'\n",
+        "ratings"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 241
+        },
+        "id": "T_2QJrj3mNDK",
+        "outputId": "1c70df52-03c1-44ba-85d3-60a1ab303414"
+      },
+      "execution_count": 15,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "Review ID\n",
+              "0    3.5\n",
+              "1    4.2\n",
+              "2    2.8\n",
+              "3    4.7\n",
+              "Name: Customer Ratings, dtype: float64"
+            ],
+            "text/html": [
+              "<div>\n",
+              "<style scoped>\n",
+              "    .dataframe tbody tr th:only-of-type {\n",
+              "        vertical-align: middle;\n",
+              "    }\n",
+              "\n",
+              "    .dataframe tbody tr th {\n",
+              "        vertical-align: top;\n",
+              "    }\n",
+              "\n",
+              "    .dataframe thead th {\n",
+              "        text-align: right;\n",
+              "    }\n",
+              "</style>\n",
+              "<table border=\"1\" class=\"dataframe\">\n",
+              "  <thead>\n",
+              "    <tr style=\"text-align: right;\">\n",
+              "      <th></th>\n",
+              "      <th>Customer Ratings</th>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>Review ID</th>\n",
+              "      <th></th>\n",
+              "    </tr>\n",
+              "  </thead>\n",
+              "  <tbody>\n",
+              "    <tr>\n",
+              "      <th>0</th>\n",
+              "      <td>3.5</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>1</th>\n",
+              "      <td>4.2</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>2</th>\n",
+              "      <td>2.8</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>3</th>\n",
+              "      <td>4.7</td>\n",
+              "    </tr>\n",
+              "  </tbody>\n",
+              "</table>\n",
+              "</div><br><label><b>dtype:</b> float64</label>"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 15
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "question 16"
+      ],
+      "metadata": {
+        "id": "90uo4Z9rmP2f"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "s = pd.Series([11, 22, 33], index=['X1', 'X2', 'X3'])\n",
+        "x2_exists = 'X2' in s.index\n",
+        "x4_absent = 'X4' not in s.index\n",
+        "x2_exists, x4_absent"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "NpULr9N_mRK4",
+        "outputId": "d7b37466-b4cf-40ef-f6d0-2334f599e43e"
+      },
+      "execution_count": 16,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "(True, True)"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 16
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "question 17"
+      ],
+      "metadata": {
+        "id": "C16uHCKYmTOq"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "stock = pd.Series([16, 28, 12], index=['Keyboard', 'Mouse', 'Monitor'])\n",
+        "stock_dict = stock.to_dict()\n",
+        "stock_dict"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Fy3CnNzOmUr5",
+        "outputId": "4573870f-ec10-472a-d177-a837cc36b8c4"
+      },
+      "execution_count": 17,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "{'Keyboard': 16, 'Mouse': 28, 'Monitor': 12}"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 17
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "question 18"
+      ],
+      "metadata": {
+        "id": "X_BkSV8VmWnF"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "data = {'Hindi': 78, 'English': 84, 'Computer': 91}\n",
+        "s_18 = pd.Series(data, index=['Computer', 'Hindi', 'Art', 'English'])\n",
+        "missing_entry = s_18[s_18.isnull()].index\n",
+        "s_18, missing_entry"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Lo_ROrBJmX8O",
+        "outputId": "de11cb95-72a4-462c-eaf9-3d0ed3631708"
+      },
+      "execution_count": 18,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "(Computer    91.0\n",
+              " Hindi       78.0\n",
+              " Art          NaN\n",
+              " English     84.0\n",
+              " dtype: float64,\n",
+              " Index(['Art'], dtype='object'))"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 18
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "question 19"
+      ],
+      "metadata": {
+        "id": "_MtolJ7mma9D"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "expenses = pd.Series([1200, None, 850, None, 600])\n",
+        "null_results = expenses.isnull()\n",
+        "notnull_results = expenses.notnull()\n",
+        "null_results, notnull_results"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "-oqirzQrmcdG",
+        "outputId": "e60d15b9-bdeb-4a68-98db-7004bb66b1cd"
+      },
+      "execution_count": 19,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "(0    False\n",
+              " 1     True\n",
+              " 2    False\n",
+              " 3     True\n",
+              " 4    False\n",
+              " dtype: bool,\n",
+              " 0     True\n",
+              " 1    False\n",
+              " 2     True\n",
+              " 3    False\n",
+              " 4     True\n",
+              " dtype: bool)"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 19
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "question 20"
+      ],
+      "metadata": {
+        "id": "BQ00djrpme43"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = pd.Series([8, 15, 22], index=['P', 'Q', 'R'])\n",
+        "b = pd.Series([4, 6, 10], index=['R', 'P', 'Q'])\n",
+        "a + b"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 178
+        },
+        "id": "GftPPcxAmgXA",
+        "outputId": "9f8d77bb-a55f-4def-986c-bbf7b636ca69"
+      },
+      "execution_count": 20,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "P    14\n",
+              "Q    25\n",
+              "R    26\n",
+              "dtype: int64"
+            ],
+            "text/html": [
+              "<div>\n",
+              "<style scoped>\n",
+              "    .dataframe tbody tr th:only-of-type {\n",
+              "        vertical-align: middle;\n",
+              "    }\n",
+              "\n",
+              "    .dataframe tbody tr th {\n",
+              "        vertical-align: top;\n",
+              "    }\n",
+              "\n",
+              "    .dataframe thead th {\n",
+              "        text-align: right;\n",
+              "    }\n",
+              "</style>\n",
+              "<table border=\"1\" class=\"dataframe\">\n",
+              "  <thead>\n",
+              "    <tr style=\"text-align: right;\">\n",
+              "      <th></th>\n",
+              "      <th>0</th>\n",
+              "    </tr>\n",
+              "  </thead>\n",
+              "  <tbody>\n",
+              "    <tr>\n",
+              "      <th>P</th>\n",
+              "      <td>14</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>Q</th>\n",
+              "      <td>25</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>R</th>\n",
+              "      <td>26</td>\n",
+              "    </tr>\n",
+              "  </tbody>\n",
+              "</table>\n",
+              "</div><br><label><b>dtype:</b> int64</label>"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 20
+        }
+      ]
+    }
+  ]
+}
